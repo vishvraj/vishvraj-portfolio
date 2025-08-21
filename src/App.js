@@ -19,7 +19,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<Routes>
+			<Routes >
 				<Route path="/" element={<Homepage />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/projects" element={<Projects />} />			
@@ -31,3 +31,4 @@ function App() {
 }
 
 export default App;
+
