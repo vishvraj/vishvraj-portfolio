@@ -1,0 +1,155 @@
+/* Desktop styles */
+.about-logo-container {
+	display: flex;
+	justify-content: left;
+	padding-top: 25px;
+}
+
+.about-logo {
+	display: flex;
+	position: fixed;
+	/* border: 1px solid white; */
+	border-radius: 50%;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	top: 4vh;
+	z-index: 999;
+}
+
+.about-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.about-main {
+	display: flex;
+}
+
+.about-right-side {
+	flex-basis: 900px;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-left-side {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 300px;
+	align-items: center;
+}
+
+/* .about-title {
+	width: 100% !important;
+	color: #1a1a1a !important;
+	font-size: 32px;
+	font-weight: 700;
+} */
+ .about-title {
+	color: #1a1a1a !important;
+	font-family: 'Agustina', sans-serif !important;
+ }
+
+.about-subtitle {
+	width: 80% !important;
+	color: var(--secondary-color) !important;
+	font-size: 18px;
+	line-height: 1.6;
+	margin-top: 20px;
+}
+
+.about-image-container {
+	width: 370px;
+}
+
+.about-image-wrapper {
+	display: inline-block;
+	overflow: hidden;
+	width: 100%;
+	border-radius: 10%;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-image-wrapper img {
+	display: block;
+	width: 100%;
+}
+
+.about-socials {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.about-socials-mobile {
+	display: none;
+}
+
+.about-page .footer-nav-link-list a {
+	text-decoration: none !important;
+	color: black !important;
+}
+
+.about-page .footer-nav-link-list a:hover {
+	color: var(--link-color) !important;
+}
+
+/* ======================= */
+/* ===== MOBILE CSS ====== */
+/* ======================= */
+
+@media (max-width: 600px) {
+
+
+
+.about-main {
+		flex-direction: column;
+		align-items: center;
+		/* text-align: center; */
+		gap: 24px;
+	}
+
+	.about-right-side,
+	.about-left-side {
+		width: 100%;
+		flex-basis: auto;
+		padding: 0 16px;
+	}
+
+	.about-title {
+		font-size: 35px !important;
+		font-family: 'Agustina', sans-serif !important;
+		text-align: justify;
+	}
+
+	.about-left-side {
+		order: 2;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	.about-image-container {
+		width: 100%;
+		max-width: 260px;
+		margin: 0 auto;
+		padding-bottom: 50px;
+	}
+
+	.about-image-wrapper {
+		border-radius: 12px;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+	}
+
+	.about-subtitle {
+		order: 3;
+		width: 100% !important;
+		text-align: justify;
+		padding-top: 10px !important;
+		font-size: 16px;
+		line-height: 1.6;
+		color: #4a4a4a;
+		margin-bottom: 20px;
+	}
+
+} 

@@ -1,0 +1,60 @@
+@import "/src/data/styles.css";
+
+
+.content-wrapper {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+  }
+  
+
+
+.title {
+	color: var(--quaternary-color);
+	font-family: var(--secondary-font);
+	font-size: 45px;
+	font-weight: 700;
+	width: 70%;
+}
+
+.subtitle {
+	padding-top: 10px;
+	color: var(--quaternary-color);
+	font-size: 20px;
+	line-height: 28px;
+	width: 70%;
+	margin-top: 25px;
+	text-align: justify;
+}
+
+.page-footer {
+	position: block;
+}
+
+.page-footer::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	border-top: 2px solid var(--tertiary-color);
+}
+
+@media (max-width: 800px) {
+	.content-wrapper {
+		
+		margin: 0 auto;
+		padding:10px;
+	}
+
+	.title {
+		width: 100%;
+	}
+
+	.subtitle {
+		width: 100%;
+	}
+}

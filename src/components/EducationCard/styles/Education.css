@@ -1,0 +1,169 @@
+.education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 80px 0;
+}
+
+.education-wrapper {
+  max-width: 1350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.education-title {
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.education-desc {
+  font-size: 18px;
+  max-width: 600px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.timeline-section {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.education-card {
+  width: 500px;
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease-in-out;
+
+background-color: white;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-top {
+  display: flex;
+  gap: 12px;
+  
+}
+
+.card-image {
+  height: 50px;
+  border-radius: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-role {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.card-company {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.card-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.card-description {
+  font-size: 15px;
+  color: var(--text-secondary); 
+  font-family: var(--primary-font);
+}
+
+.card-skills {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; 
+  color: var(--text-secondary); 
+}
+
+.skill {
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+.card-doc {
+  display: none;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.education-card:hover .card-doc {
+  display: flex;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0;
+  }
+  .education-title {
+    font-size: 32px;
+  }
+
+  .education-desc {
+    font-size: 16px;
+  }
+
+  .education-card {
+    width: 300px;
+    padding: 10px;
+  }
+
+  .card-image {
+    height: 40px;
+  }
+
+  .card-role {
+    font-size: 14px;
+  }
+
+  .card-company {
+    font-size: 12px;
+  }
+
+  .card-date {
+    font-size: 10px;
+  }
+
+  .card-description {
+    font-size: 12px;
+  }
+
+  .skill {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Roboto:wght@500&display=swap");
+@import "./data/styles.css";
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: var(--primary-font);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+	width: 4px;
+	height: 80px;
+}
+
+::-webkit-scrollbar-track {
+	background: #222A35;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #575C66;
+	border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #626970;
+}
